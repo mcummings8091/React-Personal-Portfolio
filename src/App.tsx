@@ -26,10 +26,7 @@ function App() {
             <Route path="/contact" element={<ContactPage></ContactPage>} />
             <Route path="/about" element={<AboutPage></AboutPage>} />
             <Route path="/projects" element={<ProjectsPage></ProjectsPage>} />
-            <Route
-              path="/projects/project1"
-              element={<SkateDocPage></SkateDocPage>}
-            />
+            <Route path="/project1" element={<SkateDocPage></SkateDocPage>} />
           </Routes>
         </BrowserRouter>
       </div>

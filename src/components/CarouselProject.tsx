@@ -2,9 +2,12 @@ import { styled } from "styled-components";
 import StyledHeader from "./StyleComponents/StyledHeader";
 import StyledP from "./StyleComponents/StyledP";
 
+import { Link } from "react-router-dom";
+
 interface Props {
   title: string;
   src: string;
+  link: string;
 }
 
 const StyledCard = styled.div`
@@ -28,11 +31,18 @@ const CardImg = styled.img`
   object-fit: contain;
 `;
 
-const CarouselProject = ({ title, src }: Props) => {
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+`;
+
+const CarouselProject = ({ title, src, link }: Props) => {
   return (
     <StyledCard>
       <CardTop>
-        <StyledHeader>{title}</StyledHeader>
+        <StyledHeader>
+          <StyledLink to={link}>{title}</StyledLink>
+        </StyledHeader>
         <StyledP>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros elementum tristique. Duis cursus, mi quis viverra

@@ -11,30 +11,35 @@ const OldProjects = () => {
             <CarouselProject
               title="Skateboarding Documentation"
               src="images/skatedoc.png"
+              link="/project1"
             ></CarouselProject>
           </div>
           <div className="carousel-item">
             <CarouselProject
               title="Personal Portfolio (Old)"
               src="images/oldportfolio.png"
+              link="/project1"
             ></CarouselProject>
           </div>
           <div className="carousel-item">
             <CarouselProject
               title="Mock Skateshop Webpage"
               src="images/skatestore.png"
+              link="/project1"
             ></CarouselProject>
           </div>
           <div className="carousel-item">
             <CarouselProject
               title=" Mock Skateboarding Survey"
               src="images/skatesurvey.png"
+              link="/project1"
             ></CarouselProject>
           </div>
           <div className="carousel-item">
             <CarouselProject
               title="Anakin Skywalker Character Webpage"
               src="images/tributepage.png"
+              link="/project1"
             ></CarouselProject>
           </div>
         </div>
